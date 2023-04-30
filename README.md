@@ -19,9 +19,11 @@ create table task (
       primary key (id)
 );
 
+
 Run application:
 
 If you are running on local system than start the application as spring boot application otherwise you can deploy it on any server like any microservice
+
 
 API Documentation:
 
@@ -51,7 +53,7 @@ Sample Request:
     "deadline":"2021-02-09T11:19:42.120Z"
 }
 
-Sample Response:
+Success Response:
 
 {
     "message": "Task Created Successfully",
@@ -67,6 +69,7 @@ Sample Response:
         "deadline": "2021-02-09T11:19:42.120Z"
     }
 }
+
 
 2. Updating an existing task:
 
@@ -120,6 +123,7 @@ Failure Response:
     "data": null
 }
 
+
 3. Fetching an existing task:
 
 Curl:
@@ -156,6 +160,7 @@ Failure Response:
     "statusCode": 1001,
     "data": null
 }
+
 
 4. Deleting an existing task:
 
