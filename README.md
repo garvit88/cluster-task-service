@@ -39,6 +39,7 @@ curl --location 'localhost:8081/api/ts/v1/task' \
 }'
 
 Method Type: POST
+
 Path: {{url}}:{{port}}/api/ts/v1/task
 
 Sample Request:
@@ -71,7 +72,7 @@ Sample Response:
 
 Curl:
 
-curl --location --request PUT 'localhost:8081/api/ts/v1/task/5' \
+curl --location --request PUT 'localhost:8081/api/ts/v1/task/{id}' \
 --header 'Content-Type: application/json' \
 --data '{
     "title":"test12",
@@ -81,7 +82,8 @@ curl --location --request PUT 'localhost:8081/api/ts/v1/task/5' \
 }'
 
 Method Type: PUT
-Path: {{url}}:{{port}}/api/ts/v1/task/5
+
+Path: {{url}}:{{port}}/api/ts/v1/task/{id}
 
 Sample Request:
 
@@ -113,11 +115,12 @@ Sample Response:
 
 Curl:
 
-curl --location 'localhost:8081/api/ts/v1/task/5' \
+curl --location 'localhost:8081/api/ts/v1/task/{id}' \
 --data ''
 
 Method Type: GET
-Path: {{url}}:{{port}}/api/ts/v1/task/5
+
+Path: {{url}}:{{port}}/api/ts/v1/task/{id}
 
 Sample Response:
 
@@ -140,11 +143,12 @@ Sample Response:
 
 Curl:
 
-curl --location --request DELETE 'localhost:8081/api/ts/v1/task/5' \
+curl --location --request DELETE 'localhost:8081/api/ts/v1/task/{id}' \
 --data ''
 
 Method Type: DELETE
-Path: {{url}}:{{port}}/api/ts/v1/task/5
+
+Path: {{url}}:{{port}}/api/ts/v1/task/{id}
 
 Sample Response:
 
