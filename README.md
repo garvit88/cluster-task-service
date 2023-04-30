@@ -94,7 +94,7 @@ Sample Request:
     "deadline":"2021-02-09T11:19:42.120Z"
 }
 
-Sample Response:
+Success Response:
 
 {
     "message": "Task Updated Successfully",
@@ -111,6 +111,15 @@ Sample Response:
     }
 }
 
+Failure Response:
+
+{
+    "message": "No Task Found",
+    "status": "Bad Request",
+    "statusCode": 1001,
+    "data": null
+}
+
 3. Fetching an existing task:
 
 Curl:
@@ -122,7 +131,7 @@ Method Type: GET
 
 Path: {{url}}:{{port}}/api/ts/v1/task/{id}
 
-Sample Response:
+Success Response:
 
 {
     "message": "Task Fetched Successfully",
@@ -139,6 +148,15 @@ Sample Response:
     }
 }
 
+Failure Response:
+
+{
+    "message": "No Task Found",
+    "status": "Bad Request",
+    "statusCode": 1001,
+    "data": null
+}
+
 4. Deleting an existing task:
 
 Curl:
@@ -150,11 +168,20 @@ Method Type: DELETE
 
 Path: {{url}}:{{port}}/api/ts/v1/task/{id}
 
-Sample Response:
+Success Response:
 
 {
     "message": "Task Deleted Successfully",
     "status": "Success",
     "statusCode": 200,
+    "data": null
+}
+
+Failure Response:
+
+{
+    "message": "No Task Found",
+    "status": "Bad Request",
+    "statusCode": 1001,
     "data": null
 }
